@@ -1,5 +1,4 @@
 node_modules
 dist
-lib
 # build-storybook打包生成的目录
 # storybook-static
