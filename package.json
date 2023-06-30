@@ -1,0 +1,74 @@
+{
+  "name": "storybook-ui-test-py",
+  "version": "0.0.1",
+  "description": "使用storybook发布组件",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "webpack --config webpack.config.js",
+    "pub": "npm run build && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/guozia007/storybook-ui.git"
+  },
+  "homepage": "https://guozia007.gitee.io/storybook-ui/?path=/docs/mdx-button--default-story",
+  "keywords": [
+    "storybook",
+    "ui",
+    "framework",
+    "component",
+    "react component",
+    "frontend"
+  ],
+  "author": "guozi007a",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-docs": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "0.0.13",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "glob": "^8.1.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "browserslist": [
+    ">= 0.25%",
+    "last 1 version",
+    "not dead"
+  ],
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "react": ">= 16.9.0",
+    "react-dom": ">= 16.9.0"
+  },
+  "dependencies": {}
+}
